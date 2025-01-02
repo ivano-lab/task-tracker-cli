@@ -4,6 +4,18 @@
 
 This project provides a solid foundation for managing tasks via a CLI using Python.
 
+## Features
+
+- Add tasks
+- Update tasks
+- Delete tasks
+- List all tasks
+- Filter tasks by status (completed, pending, in progress)
+
+## Installation
+
+To install and run this project, you need to have Python 3 or higher installed on your machine. You can download Python from the official website: [python.org](https://www.python.org/downloads/).
+
 ## Running the Application
 
 To run the application, navigate to the task_cli directory in your terminal and use the following commands:
@@ -43,3 +55,8 @@ List todo tasks:
 List in-progress tasks:
 
 ```python task_cli.py list in-progress```
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.

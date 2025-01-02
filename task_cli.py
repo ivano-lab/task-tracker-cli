@@ -80,12 +80,12 @@ def list_tasks(status=None):
         for task in filtered_tasks:
             print(f"[{task['status']}] ID: {task['id']} - {task['description']} (Created: {task['createdAt']})")
 
-        else:
+    else:
 
-            if not tasks:
-                print("No tasks found.")
-            for task in tasks:
-                print(f"[{task['status']}] ID: {task['id']} - {task['description']} (Created: {task['createdAt']})")
+        if not tasks:
+            print("No tasks found.")
+        for task in tasks:
+            print(f"[{task['status']}] ID: {task['id']} - {task['description']} (Created: {task['createdAt']})")
 
 def main():
     if len(sys.argv) < 2:
@@ -98,10 +98,10 @@ def main():
         description = ' '.join(sys.argv[2:])
         add_task(description)
 
-    elif command == 'uddate':
+    elif command == 'update':
         try:
             task_id = int(sys.argv[2])
-            new_description = ' '.join(sys.argv[3])
+            new_description = ' '.join(sys.argv[3:])
             update_task(task_id, new_description)
         except ValueError:
             print("Invalid ID.")
