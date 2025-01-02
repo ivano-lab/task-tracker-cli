@@ -21,5 +21,12 @@
         "status": "todo",
         "createdAt": "2025-01-02T13:40:46.329463",
         "updatedAt": "2025-01-02T13:40:46.329485"
+    },
+    {
+        "id": 4,
+        "description": "ignoring tasks.json",
+        "status": "todo",
+        "createdAt": "2025-01-02T14:26:59.814795",
+        "updatedAt": "2025-01-02T14:26:59.814867"
     }
 ]
